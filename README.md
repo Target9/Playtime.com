@@ -1,5 +1,5 @@
 # Playtime.com
-This is a prototype i am 12 yo and this is my fun little project where you can see how much Roblox some one plays
+This is a prototype i am 18 yo and this is my fun little project where you can see how much Roblox some one plays
 
 How it works
 
