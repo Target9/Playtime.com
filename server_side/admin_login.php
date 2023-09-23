@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['irl_name'] = $irlName; 
             $_SESSION['username'] = $username;
             $_SESSION['user_id'] = $userId;   
-            header("Location: /server_side/admin_panle/adminpanle.php");
+            header("Location: /server_side/admin_panle/admin_panle.php");
             exit();
         } else {
             $message = "Incorrect password.";
