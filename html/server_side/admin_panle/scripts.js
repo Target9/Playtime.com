@@ -29,12 +29,12 @@ function loadHomePage() {
 
 function redirectToParentPanel() {
     // Redirect to the Parent Panel page
-    window.location.href = '../Parent_panel/parent_panel.php';
+    window.location.href = '../parent_panel/parent_panel.php';
 }
 
 function redirectToKidPanel() {
     // Redirect to the Kid Panel page
-    window.location.href = '../Kid_panel/kid_panel.php';
+    window.location.href = '../kid_panel/kid_panel.php';
 }
 
 //Chat system
