@@ -1,15 +1,13 @@
 <?php
 session_start();
 
-$db_servername = "localhost";
-$db_username = "parentUser";
-$db_password = "ParentPass123!";
-$db_dbname = "Parent";
+include 'db_connection.php';  // Include the db_connection.php file
 
-$conn = new mysqli($db_servername, $db_username, $db_password, $db_dbname);
-
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+// Connect using the function from db_connection.php and the USER_PARENT constant
+try {
+    $conn = getDbConnection(USER_PARENT);
+} catch (Exception $e) {
+    die("Connection failed: " . $e->getMessage());
 }
 
 $message = "";
