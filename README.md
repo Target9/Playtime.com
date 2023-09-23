@@ -3,7 +3,7 @@ This is a prototype i am 18 yo and this is my fun little project where you can s
 
 How it works
 
-You lanch the python script on an computer and then you set up a webserver running the webserver. you will also need to ajust the python file so it sends stuff to the webserver
+You lanch the python script on a computer and then you set up a webserver running the webserver. you will also need to ajust the python file so it sends stuff to the webserver
 
 I have added comments so you can see what the code does
 
