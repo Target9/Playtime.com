@@ -1,0 +1,8 @@
+User-agent: *
+Disallow:
+Disallow: /server_side/Parent_panel/
+Disallow: /server_side/Admin_panle/
+Disallow: /server_side/Admin_panle/styles.css
+Disallow: /server_side/Admin_panle/scripts.js
+Disallow: /server_side/Parent_panel/styles.css
+Disallow: /server_side/Parent_panel/scripts.js
