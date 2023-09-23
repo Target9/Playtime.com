@@ -9,7 +9,7 @@ define('Roblox', 'Game');
 define('ChatApp', 'Chat');
 
 function getDbConnection($userType) {
-    $host = 'localhost';
+    $host = 'db';
 
     // Define user types and their corresponding credentials and databases
     $userCredentials = [
