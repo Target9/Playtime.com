@@ -1,0 +1,316 @@
+/* =======================
+   VARIABLES
+======================== */
+:root {
+    --primary-bg: #2c3e50;
+    --hover-bg: #34495e;
+    --white: #ffffff;
+    --box-shadow-light: 0px 0px 10px rgba(0,0,0,0.1);
+    --border: 1px solid #ccc;
+}
+
+/* =======================
+   GLOBAL STYLES
+======================== */
+body, html {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* =======================
+   GENERAL ELEMENT STYLES
+======================== */
+button, input[type="button"] {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--primary-bg); /* Set a default background-color */
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover, input[type="button"]:hover {
+    background-color: var(--hover-bg);
+}
+
+/* =======================
+   SIDEBAR STYLES
+======================== */
+#sidebar {
+    width: 250px;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(180deg, var(--primary-bg), var(--hover-bg));
+    color: var(--white);
+    padding-top: 50px;
+    box-shadow: var(--box-shadow-light);
+    transition: all 0.3s;
+    border-right: 5px solid transparent;
+    overflow-y: auto;
+}
+
+#sidebar:hover {
+    width: 260px;
+    border-right-color: rgb(55, 125, 255);
+}
+
+#sidebar h3 {
+    text-align: center;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    transition: all 0.3s;
+}
+
+#sidebar ul li {
+    margin: 20px 0;
+    transition: all 0.3s;
+}
+
+#sidebar ul li a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: background 0.3s;
+}
+
+#sidebar ul li a:hover {
+    background: rgba(255, 251, 251, 0.1);
+    padding-left: 40px;
+}
+
+#content {
+    margin-left: 270px;
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    transition: margin-left 0.3s;
+}
+
+/* =======================
+   Control panel styles
+======================== */
+
+#killGameButton,
+#checkRobloxButton,
+#DataAnalyst,
+#updateScriptButton {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 15px;  
+}
+
+/* =======================
+   GENERAL STYLES
+======================== */
+
+#topLeftLogoutButton {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+}
+
+#topLeftLogoutButton button {
+    background-color: var(--primary-bg);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#topLeftLogoutButton button:hover {
+    background-color: #154472;
+}
+
+#searchBar {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: var(--border);
+    border-radius: 5px;
+    width: 85%;
+    box-shadow: var(--box-shadow-light);
+    transition: box-shadow 0.3s ease, border 0.3s ease;
+    background-image: url('https://cdn0.iconfinder.com/data/icons/lamar/512/Loop-512.png');
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    background-size: 24px 24px;
+    padding-left: 40px;
+}
+
+#searchBar:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+#calendarInput {
+    border: var(--border);
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#tableContainer {
+    max-height: calc(100vh - 100px);  
+    overflow-y: auto;
+}
+
+table, th, td {
+    border: 1px solid #858585;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+tr:hover {
+    background-color: #e0e0e0;
+}
+
+#chatBox p {
+    border: var(--border);
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-top: 20px;
+    border-radius: 5px;
+    overflow-wrap: break-word;
+}
+
+#chatBox .myMessage {
+    text-align: right;
+    color: rgb(0, 0, 0);
+    background-color: #0088f793;
+    margin-left: 30%;
+    overflow-wrap: break-word;
+}
+
+#user, #message {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: var(--border);
+    border-radius: 3px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#user {
+    width: 50%; 
+}
+
+#message {
+    height: 100px;
+    resize: vertical;
+}
+
+h1#header {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+input#searchPerson {
+    padding: 10px;
+    margin: 20px 0;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    width: 300px;
+    box-shadow: var(--box-shadow-light);
+    transition: box-shadow 0.3s;
+}
+
+input#searchPerson:focus {
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2);
+    outline: solid;
+}
+
+input#date {
+    padding: 10px;
+    border: 2px solid #0a0000;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#personDropdown {
+    display: block;
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: var(--border);
+    box-shadow: var(--box-shadow-light);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #f4f4f4;
+}
+
+#confirmButton {
+    margin-left: 0px;
+    margin-top: 5px;
+    width: 300px;
+    padding: 10px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+#feedback {
+    width: 97%;
+    min-height: 150px;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    resize: vertical; /* This allows the user to resize the textarea vertically, but not horizontally */
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* =======================
+   MEDIA QUERIES
+======================== */
+@media screen and (max-width: 768px) {
+    #sidebar {
+        width: 60px;
+    }
+
+    #sidebar:hover {
+        width: 250px;
+    }
+
+    #content {
+        margin-left: 70px;
+    }
+}
